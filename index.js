@@ -7,7 +7,7 @@ const URL = process.env.URL || "https://sber.ru/";
 
 (async () => {
   let i = 1;
-  while (i < 10) {
+  while (true) {
     i++;
     if (i % 1000 === 0) {
       console.log(i)
@@ -16,6 +16,6 @@ const URL = process.env.URL || "https://sber.ru/";
       })
     }
     
-    fetch(URL).then(() => console.log("🚀")).catch((e) => e)
+    fetch(URL).catch((e) => e)
   }
 })();
