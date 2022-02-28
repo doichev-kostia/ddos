@@ -13,8 +13,6 @@
     "node-fetch": "^3.2.0"
   },
   "scripts": {
-    "node": "node index.js",
-    "shell": "sh reload.sh",
-    "start": "concurrently --kill-others \"yarn run node\" \"yarn run shell\""
+    "start": "node index.js"
   }
 }
