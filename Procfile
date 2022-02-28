@@ -1,0 +1,1 @@
+release: sh reload.sh
