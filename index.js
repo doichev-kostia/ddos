@@ -10,7 +10,7 @@ const URL = process.env.URL || "https://sber.ru/";
   while (true) {
     i++;
     if (i % 1000 === 0) {
-      console.log(i)
+      console.log(`${i} were sent to ${URL}`);
       await new Promise((res) => {
         setTimeout(res, 1000)
       })
